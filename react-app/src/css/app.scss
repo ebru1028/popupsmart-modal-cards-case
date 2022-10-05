@@ -1,0 +1,76 @@
+/* BREAKPOINTS START */
+
+$screen-sm-max: 576px;
+
+$screen-md-max: 768px;
+
+$screen-lg-max: 1200px;
+
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (max-width: $screen + 'px') {
+        @content;
+    }
+}
+
+/* BREAKPOINTS END */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;        
+}
+
+
+
+@import 'helpers/_reset';
+
+@import 'modules/_header';
+
+@import 'modules/_banner';
+
+@import 'modules/_statistics';
+
+@import 'modules/_sub-title';
+
+@import 'modules/_modal-card-generator';
+
+@import 'modules/modal-1';
+
+@import 'modules/modal-2';
+
+@import 'modules/modal-3';
+
+@import 'modules/_services';
+
+@import 'modules/_faq';
+
+@import 'modules/_footer';

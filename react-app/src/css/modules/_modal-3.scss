@@ -1,0 +1,89 @@
+.modal-3 {
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+  background-color: #FFFFFF;
+
+  .inner {
+    padding: 40px;
+    display: block;
+    text-align: center !important;
+
+    img{
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+
+    button {
+      width: 100%;
+      background: #7d4aea;
+      border-radius: 8px;
+      color: white;
+      padding: 16px 5px;
+      margin: 0 7px;
+      font-size: 16px;
+      border: none;
+
+      &.black {
+        background-color: #000000;
+        color: white;
+      }
+
+      &.orange {
+        background-color: #f37c34;
+        color: white;
+      }
+
+      &.dark-grey {
+        background-color: #777777;
+        color: white;
+      }
+      &.grey {
+        background-color: #ddd;
+        color: #000000;
+      }
+
+      &.white {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        color: #000000;
+      }
+
+      &.purple {
+        background: #7d4aea;
+        border: 1px solid #ffffff;
+      }
+    }
+  }
+
+  .btn-close {
+    text-decoration: none;
+    position: absolute;
+    border: 2px solid #666666;
+    color: #666666;
+    padding: 7px;
+    border-radius: 50%;
+    right: 7px;
+    top: 7px;
+    opacity: 0.7;
+  }
+}

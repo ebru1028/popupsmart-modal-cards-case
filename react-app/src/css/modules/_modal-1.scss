@@ -1,0 +1,128 @@
+.modal-1 {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgb(0 0 0 / 15%);
+  border-radius: 45px;
+  width: 100%;
+
+  .inner {
+    display: flex !important;
+    justify-content: space-between !important; 
+
+    .m-left{
+      padding: 45px 20px;
+
+      h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 54px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #000000;
+        margin-bottom: 30px;
+      }
+  
+      form {
+        display: block;
+        position: relative;
+        max-width: 364px;
+        width: 100%;
+  
+        input {
+          width: 100%;
+          background: #ffffff;
+          border: 1px solid #bbbbbb;
+          border-radius: 12px;
+          padding: 12px 15px;
+          margin-bottom: 15px;
+        }
+  
+        button {
+          width: 100%;
+          background: #f37c34;
+          border: none;
+          border-radius: 8px;
+          color: white;
+          padding: 12px 30px;
+          margin-bottom: 20px;
+  
+          &.black {
+            background-color: #000000;
+            color: white;
+          }
+  
+          &.orange {
+            background-color: #f37c34;
+            color: white;
+          }
+  
+          &.dark-grey {
+            background-color: #777777;
+            color: white;
+          }
+          &.grey {
+            background-color: #ddd;
+            color: #000000;
+          }
+  
+          &.white {
+            background: #ffffff;
+            color: #000000;
+          }
+  
+          &.purple {
+            background: #7d4aea;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+          }
+        }
+      }
+  
+      > span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #777777;
+      }
+    }
+
+    .m-right {
+      display: flex;
+      border: none !important;
+  
+      img {
+        width: 100%;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+      }
+    }
+  }
+
+  .btn-close {
+    text-decoration: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #666666;
+    padding: 12px;
+    border-radius: 50%;
+    right: 30px;
+    top: 30px;
+    opacity: 0.5;
+  }
+}

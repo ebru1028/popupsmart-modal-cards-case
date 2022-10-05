@@ -1,0 +1,40 @@
+.sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+    @include md {
+      margin-top: 50px;
+    }
+
+    .grey-circle {
+      background: #eaeaea;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+
+    h2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      color: #000000;
+
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+        color: #000000;
+      }
+    }
+  }

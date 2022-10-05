@@ -70,7 +70,7 @@ export default function ChooseTemplate() {
             </div>
 
             {
-                selectedTemplate  &&
+                selectedTemplate.modalType?.length > 0  &&
                 <>
                     <Appearance />
 

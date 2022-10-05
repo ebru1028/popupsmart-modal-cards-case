@@ -36,21 +36,21 @@ export default function Content3() {
                     name='reply_to'
                     placeholder=''
                     defaultValue={title}
-                    onChange={(e) => { setTitle(e.target.value); }}
+                    onChange={(e) => { setTitle(e.target.value) }}
                 />
                 <input className='content-input'
                     type='text'
                     name='reply_to'
                     placeholder=''
                     defaultValue={description}
-                    onChange={(e) => { setDescription(e.target.value); }}
+                    onChange={(e) => { setDescription(e.target.value) }}
                 />
                 <input className='content-input'
                     type='text'
                     name='reply_to'
                     placeholder=''
                     defaultValue={buttonTitle}
-                    onChange={(e) => { setButtonTitle(e.target.value); }}
+                    onChange={(e) => { setButtonTitle(e.target.value) }}
                 />
 
                 <div className='upload-logo'>

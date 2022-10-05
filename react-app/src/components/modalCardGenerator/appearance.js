@@ -49,31 +49,31 @@ export default function Appearance() {
                     <p>Position</p>
                     <ul className='position-items'>
                         <li>
-                            <input type="radio" name="position" defaultValue="left1" checked={appearance.position === "left1"} onClick={(e) => handlePositionChange("left1")} />
+                            <input type="radio" name="position" defaultValue="left1" defaultChecked={appearance.position === "left1"} onClick={(e) => handlePositionChange("left1")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="center1" checked={appearance.position === "center1"} onClick={(e) => handlePositionChange("center1")} />
+                            <input type="radio" name="position" defaultValue="center1" defaultChecked={appearance.position === "center1"} onClick={(e) => handlePositionChange("center1")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="right1" checked={appearance.position === "right1"} onClick={(e) => handlePositionChange("right1")} />
+                            <input type="radio" name="position" defaultValue="right1" defaultChecked={appearance.position === "right1"} onClick={(e) => handlePositionChange("right1")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="left2" checked={appearance.position === "left2"} onClick={(e) => handlePositionChange("left2")} />
+                            <input type="radio" name="position" defaultValue="left2" defaultChecked={appearance.position === "left2"} onClick={(e) => handlePositionChange("left2")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="center2" checked={appearance.position === "center2"} onClick={(e) => handlePositionChange("center2")} />
+                            <input type="radio" name="position" defaultValue="center2" defaultChecked={appearance.position === "center2"} onClick={(e) => handlePositionChange("center2")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="right2" checked={appearance.position === "right2"} onClick={(e) => handlePositionChange("right2")} />
+                            <input type="radio" name="position" defaultValue="right2" defaultChecked={appearance.position === "right2"} onClick={(e) => handlePositionChange("right2")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="left3" checked={appearance.position === "left3"} onClick={(e) => handlePositionChange("left3")} />
+                            <input type="radio" name="position" defaultValue="left3" defaultChecked={appearance.position === "left3"} onClick={(e) => handlePositionChange("left3")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="center3" checked={appearance.position === "center3"} onClick={(e) => handlePositionChange("center3")} />
+                            <input type="radio" name="position" defaultValue="center3" defaultChecked={appearance.position === "center3"} onClick={(e) => handlePositionChange("center3")} />
                         </li>
                         <li>
-                            <input type="radio" name="position" defaultValue="right3" checked={appearance.position === "right3"} onClick={(e) => handlePositionChange("right3")} />
+                            <input type="radio" name="position" defaultValue="right3" defaultChecked={appearance.position === "right3"} onClick={(e) => handlePositionChange("right3")} />
                         </li>
                     </ul>
                 </div>

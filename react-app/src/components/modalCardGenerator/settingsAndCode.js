@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setSettingsAndCode } from '../../redux/settingsAndCodeSlice';
 
 export default function SettingsAndCode() {
-    const settingsAndCode = useSelector(state => state.SettingsAndCode);
-    const targeting = useSelector(state => state.targeting.item);
 
     const content1 = useSelector(state => state.content.content1);
     const content2 = useSelector(state => state.content.content2);
@@ -20,7 +18,6 @@ export default function SettingsAndCode() {
     const [sendData, setSendData] = useState(false);
     const [code, setCode] = useState("");
 
-
     const [sendFormIsChecked, setSendFormIsChecked] = useState();
     const [sendClickDataIsChecked, setSendClickDataIsChecked] = useState();
 
@@ -30,12 +27,11 @@ export default function SettingsAndCode() {
             sendForm,
             sendData
         }))
-    }, [webhookUrl, sendForm, sendData])
+    }, [sendForm, sendData])
 
-    useEffect(() =>{
-       setCode("");
-    },[selectedTemplate])
-
+    useEffect(() => {
+        setCode("");
+    }, [selectedTemplate])
 
     const getYourCodeHandle = () => {
 
@@ -50,7 +46,7 @@ export default function SettingsAndCode() {
         }
     }
 
-    const copyCode = (e) =>{
+    const copyCode = (e) => {
         navigator.clipboard.writeText(code)
     }
 
@@ -68,18 +64,18 @@ export default function SettingsAndCode() {
                     <h3>Webhook to Send data</h3>
                     <p>
                         Enter youe Webhook URL <br />
-                        You can  create a simple one with <a href>make.com</a>
+                        You can  create a simple one with <a href="#!">make.com</a>
                     </p>
 
                     <input type='text' className='content-input' placeholder='Your Webhook URL' defaultValue={webhookUrl} onChange={(e) => setWebhookUrl(e.target.value)} />
 
                     <ul className='checkbox-items'>
                         <li>
-                            <input type="checkbox" defaultChecked={false} name="chk" id="" defaultValue={sendFormIsChecked} onClick={(e) => setSendFormIsChecked(!sendFormIsChecked)} />
+                            <input type="checkbox" defaultChecked={false} name="chk" id="" defaultValue={false} onClick={(e) => setSendFormIsChecked(!sendFormIsChecked)} />
                             Send form submissions
                         </li>
                         <li>
-                            <input type="checkbox" defaultChecked={false} name="chk" id="" defaultValue={sendClickDataIsChecked} onClick={(e) => setSendClickDataIsChecked(!sendClickDataIsChecked)} />
+                            <input type="checkbox" defaultChecked={false} name="chk" id="" defaultValue={false} onClick={(e) => setSendClickDataIsChecked(!sendClickDataIsChecked)} />
                             Send click data
                         </li>
                     </ul>
@@ -89,7 +85,7 @@ export default function SettingsAndCode() {
             </div>
 
             <div className='submit-btn'>
-                <a href="#!" className='btn-get-code' onClick={getYourCodeHandle}>Get your Code </a>
+                <a href="#!" className='btn-get-code' onClick={(getYourCodeHandle)}>Get your Code </a>
 
                 {
                     code.length > 0 && <>

@@ -70,7 +70,7 @@ export default function ChooseTemplate() {
             </div>
 
             {
-                selectedTemplate &&
+                selectedTemplate  &&
                 <>
                     <Appearance />
 
@@ -91,6 +91,7 @@ export default function ChooseTemplate() {
                     <SettingAndCode />
                 </>
             }
+
         </>
     )
 }

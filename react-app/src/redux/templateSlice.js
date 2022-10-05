@@ -34,12 +34,6 @@ export const templateSlice = createSlice({
         })
     }
 
-    // extraReducers: {
-    //     [fetchTemplates.fulfilled]: (state, action) => {
-    //         state.items = action.payload;
-    //     }
-    // }
-
 });
 
 export default templateSlice.reducer;
